@@ -7,7 +7,7 @@ import google.generativeai as genai
 from google.api_core.exceptions import ResourceExhausted, GoogleAPIError
 
 load_dotenv()
-api_key = os.getenv("AIzaSyA8mMYpCQNiNqlPCH0L7o2bzFK3ebH0_L8")
+api_key = os.getenv("GOOGLE_API_KEY")
 demo_mode = os.getenv("DEMO_MODE", "false").lower() == "true"
 
 if not api_key and not demo_mode:
@@ -183,4 +183,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
